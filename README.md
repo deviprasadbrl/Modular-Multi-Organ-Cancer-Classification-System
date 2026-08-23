@@ -523,9 +523,18 @@ Grad-CAM
 Final Output
 ```
 
-<p align="center">
-  <img src="assets/inference_out.png" width="200">
-</p>
+```text
+
+Router says: kidney
+Final prediction: tumor
+Confidence per class:
+  cyst: 0.38%
+  normal: 1.04%
+  stone: 0.56%
+  tumor: 98.02%
+Saved: kidney_gradcam.jpg
+
+```
 
 ---
 
@@ -637,7 +646,6 @@ modular-multi-organ-cancer/
 │   └── router_model.py
 │
 ├── assets/
-|   ├── infernce_out.png
 │   ├── architure.png
 │   ├── router_confusion_matrix.png
 │   ├── brain_confusion_matrix.png
