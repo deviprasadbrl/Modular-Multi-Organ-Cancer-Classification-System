@@ -656,7 +656,7 @@ modular-multi-organ-cancer/
 │   ├── brain_expert_model.pth
 │   ├── kidney_expert_model.pth
 │   ├── oral_expert_model.pth
-│   └── router_expert_model.pth
+│   └── router_model.pth
 │
 ├── models/
 │   ├── brain_model.py
