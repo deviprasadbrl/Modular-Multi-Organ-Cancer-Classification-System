@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 from torchvision import models, transforms
 from PIL import Image
+from models_paths import brain_path, kidney_path, oral_path, router_path
 from grad_cam import grad_cam, overlay_heatmap
 from input_validation import validate
 
@@ -27,7 +28,6 @@ def load_model(path, num_classes):
     model.eval()
     return model
 
-#place the models path respectively
 router_model = load_model(router_path, len(router_classes))
 brain_model = load_model(brain_path, len(brain_classes))
 oral_model = load_model(oral_path, len(oral_classes))
