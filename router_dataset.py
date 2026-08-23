@@ -4,11 +4,11 @@ import random
 from datasets import load_dataset
 from PIL import Image
 
-# 1. Configuration
+#plsce the dataset root(train/test)
 source_dirs = {
-    "brain": r"C:\Users\Devi Prasad\OneDrive\Documents\prep\Machine learning\CNN\project\Datasets\brain_unzip\Epic and CSCR hospital Dataset\Train",
-    "kidney": r"C:\Users\Devi Prasad\OneDrive\Documents\prep\Machine learning\CNN\project\Datasets\kidney_unzipped\Kindey_Stone_Dataset\train",
-    "oral": r"C:\Users\Devi Prasad\OneDrive\Documents\prep\Machine learning\CNN\project\Datasets\oral_unzip\train"
+    "brain": "",
+    "kidney": "",
+    "oral": ""
 }
 
 target_root = "./router_dataset"
