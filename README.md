@@ -35,7 +35,7 @@ The system contains:
 ### High-Level Pipeline
 
 <p align="center">
-  <img src="assets/architure.png" width="500">
+  <img src="assets/architecture.png" width="500">
 </p>
 
 
@@ -101,7 +101,7 @@ After the expert prediction, the highest softmax probability is used as the conf
 If the confidence is below `0.50`, the system reports:
 
 ```text
-Model has low confidence-recommended manuall review.
+Model has low confidence-recommended manual review.
 ```
 
 and does not return a final classification.
@@ -464,7 +464,7 @@ random
 If the router's prediction confidence is below the configured threshold, the system reports:
 
 ```text
-Model has low confidence (...): result unreliable
+Model has low confidence - recommended manual review
 ```
 
 and stops the prediction pipeline.
@@ -536,7 +536,6 @@ Confidence per class:
 Saved: kidney_gradcam.jpg
 
 ```
-
 ---
 
 # Explainability with Grad-CAM
@@ -647,7 +646,7 @@ modular-multi-organ-cancer/
 │   └── router_model.py
 │
 ├── assets/
-│   ├── architure.png
+│   ├── architecture.png
 │   ├── router_confusion_matrix.png
 │   ├── brain_confusion_matrix.png
 │   ├── kidney_confusion_matrix.png
@@ -725,10 +724,6 @@ The pipeline will:
 8. Display class probabilities
 9. Generate a Grad-CAM visualization
 
-**[ADD SCREENSHOT HERE — final successful inference]**
-
----
-
 # AI Assistance
 
 AI tools were used during the development of this project as a supporting resource for:
@@ -788,13 +783,12 @@ The project is intended as an **educational and research prototype**, with futur
 
 ## References
 
-**[ADD YOUR DATASET LINKS HERE]**
+**Datasets Used**
 
-* Brain MRI dataset
-* Kidney CT dataset
-* Oral histopathology dataset
+* Brain MRI dataset: https://data.mendeley.com/datasets/zwr4ntf94j/1
+* Kidney CT dataset: https://www.kaggle.com/datasets/srinivasbece/kindey-stone-dataset-splitted
+* Oral histopathology dataset: https://www.kaggle.com/datasets/ashenafifasilkebede/dataset
 
-**[ADD ANY PAPERS / SOURCES YOU ACTUALLY USED HERE]**
 
 ---
 
