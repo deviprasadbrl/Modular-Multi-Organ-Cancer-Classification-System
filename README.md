@@ -613,10 +613,10 @@ Grad-CAM provides an interpretation-oriented visualization but does not guarante
 modular-multi-organ-cancer/
 │
 ├── models/
-│   ├── router/
-│   ├── brain/
-│   ├── kidney/
-│   └── oral/
+│   ├── brain_model.py
+│   ├── kidney_model.py
+│   ├── oral_model.py
+│   └── router_model.py
 │
 ├── assets/
 │   ├── architecture.png
@@ -629,7 +629,6 @@ modular-multi-organ-cancer/
 ├── inference.py
 ├── grad_cam.py
 ├── input_validation.py
-├── models_paths.py
 ├── requirements.txt
 └── README.md
 ```
