@@ -2,7 +2,7 @@
 
 A modular deep-learning system for medical image classification that first validates and routes an input image to the appropriate medical-domain expert, then performs domain-specific classification and generates a Grad-CAM visualization for interpretability.
 
-> **Disclaimer:** This project is an educational/research prototype and is **not a clinically validated medical diagnostic system**. It must not be used for medical diagnosis or treatment decisions.
+> **Disclaimer:** This project is an educational prototype and is **not a clinically validated medical diagnostic system**. It must not be used for medical diagnosis or treatment decisions.
 
 ---
 
