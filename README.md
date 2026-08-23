@@ -637,13 +637,21 @@ modular-multi-organ-cancer/
 │   └── router_model.py
 │
 ├── assets/
+|   ├── models/
 │   ├── architecture.png
 │   ├── router_confusion_matrix.png
 │   ├── brain_confusion_matrix.png
 │   ├── kidney_confusion_matrix.png
 │   ├── oral_confusion_matrix.png
 │   └── gradcam/
-│
+|        ├── glioma_brain_gradcam.jpg
+│        ├── glioma_brain_image.jpg
+│        ├── kidney_tumor_gradcam.jpg
+│        ├── kidney_tumor_image.jpg
+│        ├── oral_OSCC_gradcam.jpg
+|        ├── oral_OSCC_image.jpg
+|
+|
 ├── inference.py
 ├── README.MD
 ├── grad_cam.py
