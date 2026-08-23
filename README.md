@@ -34,47 +34,8 @@ The system contains:
 
 ### High-Level Pipeline
 
-**[ADD IMAGE HERE — create a polished architecture diagram and save it as `assets/architecture.png`]**
+assets/cancer_detection_pipeline_flow.png
 
-```text
-                         Input Image
-                              │
-                              ▼
-                    ┌──────────────────┐
-                    │ Input Validation │
-                    │    PNG / JPG     │
-                    └────────┬─────────┘
-                             │
-                             ▼
-                   Resize + Normalize
-                             │
-                             ▼
-                    ┌────────────────┐
-                    │  Router Model  │
-                    │   DenseNet121  │
-                    └───────┬────────┘
-                            │
-              ┌─────────────┼─────────────┐
-              │             │             │
-              ▼             ▼             ▼
-        ┌──────────┐  ┌──────────┐  ┌──────────┐
-        │  Brain   │  │  Kidney  │  │   Oral   │
-        │  Expert  │  │  Expert  │  │  Expert  │
-        └────┬─────┘  └────┬─────┘  └────┬─────┘
-             │             │             │
-             └─────────────┼─────────────┘
-                           ▼
-                  Expert Prediction
-                           │
-                           ▼
-                    Confidence Check
-                           │
-                           ▼
-                        Grad-CAM
-                           │
-                           ▼
-                       Final Output
-```
 
 ### Main Components
 
