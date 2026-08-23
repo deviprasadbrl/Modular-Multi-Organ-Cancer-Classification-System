@@ -163,7 +163,9 @@ The router achieved **100% accuracy and 100% macro F1** on this evaluation set.
 
 ### Router Confusion Matrix
 
-<img width="2400" height="1800" alt="router_confusion_matrix" src="https://github.com/user-attachments/assets/f38c9778-b885-45bd-9a31-f3c6b14d8aaf" />
+<p align="center">
+  <img src="assets/router_confusion_matrix.png" width="500">
+</p>
 
 The confusion matrix shows the predictions across the four routing categories.
 
@@ -212,7 +214,9 @@ The Brain Expert achieved:
 
 ### Confusion Matrix
 
-<img width="2400" height="1800" alt="brain_confusion_matrix" src="https://github.com/user-attachments/assets/d9d80cf5-e997-4597-9282-d69c5110c33d" />
+<p align="center">
+  <img src="assets/brain_confusion_matrix.png" width="500">
+</p><img width="2400" height="1800" alt="brain_confusion_matrix" src="https://github.com/user-attachments/assets/d9d80cf5-e997-4597-9282-d69c5110c33d" />
 
 
 
@@ -268,7 +272,9 @@ The Kidney Expert achieved:
 
 ### Confusion Matrix
 
-<img width="2400" height="1800" alt="kidney_confusion_matrix" src="https://github.com/user-attachments/assets/3f073506-5548-44ea-992a-a305937d3935" />
+<p align="center">
+  <img src="assets/kidney_confusion_matrix.png" width="500">
+</p>
 
 
 ### Grad-CAM Examples
@@ -316,8 +322,9 @@ The Oral Expert achieved:
 
 ### Confusion Matrix
 
-<img width="2400" height="1800" alt="oral_confusion_matrix" src="https://github.com/user-attachments/assets/501d36db-6eef-4b45-9b44-8b604918d32b" />
-
+<p align="center">
+  <img src="assets/oral_confusion_matrix.png" width="500">
+</p>
 
 The oral expert has lower performance than the brain and kidney experts. In particular, the Normal class has a lower F1-score than OSCC.
 
