@@ -6,7 +6,7 @@ A modular deep-learning system for medical image classification that first valid
 
 ---
 
-## Project Overview
+# Project Overview
 
 Medical images from different organs and imaging domains can have substantially different visual characteristics. Instead of training a single classifier to directly handle every domain, this project uses a **modular router–expert architecture**.
 
@@ -30,7 +30,7 @@ The system contains:
 
 ---
 
-## System Architecture
+# System Architecture
 
 ### High-Level Pipeline
 
