@@ -632,10 +632,11 @@ modular-multi-organ-cancer/
 │   └── gradcam/
 │
 ├── inference.py
+├── README.MD
 ├── grad_cam.py
 ├── input_validation.py
-├── requirements.txt
-└── README.md
+├── models_paths.py
+└── requirements.py
 └── router_dataset.py
 
 ```
