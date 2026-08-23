@@ -101,7 +101,7 @@ After the expert prediction, the highest softmax probability is used as the conf
 If the confidence is below `0.50`, the system reports:
 
 ```text
-Model has low confidence-recommended manual review.
+Model has low confidence - recommended manual review.
 ```
 
 and does not return a final classification.
@@ -652,20 +652,20 @@ modular-multi-organ-cancer/
 │   ├── kidney_confusion_matrix.png
 │   ├── oral_confusion_matrix.png
 │   └── gradcam/
-|        ├── glioma_brain_gradcam.jpg
+│        ├── glioma_brain_gradcam.jpg
 │        ├── glioma_brain_image.jpg
 │        ├── kidney_tumor_gradcam.jpg
 │        ├── kidney_tumor_image.jpg
 │        ├── oral_OSCC_gradcam.jpg
-|        ├── oral_OSCC_image.jpg
-|
-|
+│        └──  oral_OSCC_image.jpg
+│
+│
 ├── inference.py
-├── README.MD
+├── README.md
 ├── grad_cam.py
 ├── input_validation.py
 ├── models_paths.py
-└── requirements.py
+├──  requirements.txt
 └── router_dataset.py
 
 ```
@@ -677,8 +677,8 @@ modular-multi-organ-cancer/
 ## Clone the repository
 
 ```bash
-git clone <https://github.com/deviprasadbrl/Modular-Multi-Organ-Cancer-Classification-System>
-cd <Modular-Multi-Organ-Cancer-Classification-System>
+git clone https://github.com/deviprasadbrl/Modular-Multi-Organ-Cancer-Classification-System
+cd Modular-Multi-Organ-Cancer-Classification-System
 ```
 
 ## Install dependencies
@@ -692,7 +692,7 @@ pip install -r requirements.txt
 
 The trained model checkpoints are included with the project.
 
-weights/
+model_weights/
 ├── brain_expert_model.pth
 ├── kidney_expert_model.pth
 ├── oral_expert_model.pth
