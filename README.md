@@ -156,10 +156,10 @@ Input Image
      ▼
   Router
      │
-     ├── brain  ──→ Brain Expert
-     ├── kidney ──→ Kidney Expert
-     ├── oral   ──→ Oral Expert
-     └── random ──→ Reject / Unsupported Domain
+     ├── brain  ──> Brain Expert
+     ├── kidney ──> Kidney Expert
+     ├── oral   ──> Oral Expert
+     └── random ──> Reject / Unsupported Domain
 ```
 
 ### Router Dataset Construction
