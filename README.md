@@ -633,7 +633,7 @@ Grad-CAM provides an interpretation-oriented visualization but does not guarante
 
 ```text
 modular-multi-organ-cancer/
-├── models_weights/
+├── model_weights/
 │   ├── brain_expert_model.pth
 │   ├── kidney_expert_model.pth
 │   ├── oral_expert_model.pth
@@ -657,7 +657,7 @@ modular-multi-organ-cancer/
 │        ├── kidney_tumor_gradcam.jpg
 │        ├── kidney_tumor_image.jpg
 │        ├── oral_OSCC_gradcam.jpg
-│        └──  oral_OSCC_image.jpg
+│        └── oral_OSCC_image.jpg
 │
 │
 ├── inference.py
@@ -665,7 +665,7 @@ modular-multi-organ-cancer/
 ├── grad_cam.py
 ├── input_validation.py
 ├── models_paths.py
-├──  requirements.txt
+├── requirements.txt
 └── router_dataset.py
 
 ```
@@ -781,7 +781,7 @@ The project is intended as an **educational and research prototype**, with futur
 
 ---
 
-## References
+# References
 
 **Datasets Used**
 
@@ -792,7 +792,7 @@ The project is intended as an **educational and research prototype**, with futur
 
 ---
 
-## Author
+# Author
 
 **Devi Prasad BRL**
 
