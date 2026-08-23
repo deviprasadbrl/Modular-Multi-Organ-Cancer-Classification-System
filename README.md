@@ -89,9 +89,9 @@ The `random` category represents images outside the supported medical domains.
 Once the router selects a domain, the image is forwarded to the corresponding specialist model:
 
 ```text
-brain  → Brain Expert
-kidney → Kidney Expert
-oral   → Oral Expert
+brain  -> Brain Expert
+kidney -> Kidney Expert
+oral   -> Oral Expert
 ```
 
 ### 5. Confidence Check
@@ -180,7 +180,7 @@ The router therefore performs **domain classification**, while the expert models
 ```text
 Brain MRI          ──┐
                      │
-Kidney CT           ──┼──→ Router Dataset
+Kidney CT            │──→ Router Dataset
                      │
 Oral Histopathology ─┤
                      │
@@ -218,6 +218,10 @@ The router achieved **100% accuracy and 100% macro F1** on this evaluation set.
 </p>
 
 The confusion matrix shows the predictions across the four routing categories.
+
+**Why Did the Router Achieve 100% Accuracy?**
+
+The router classifies visually distinct domains such as brain MRI, kidney CT, and oral histopathology. The DenseNet121 backbone with transfer learning and fine-tuning was able to learn these domain-specific visual features effectively, resulting in 100% accuracy on the held-out evaluation set.
 
 ---
 
