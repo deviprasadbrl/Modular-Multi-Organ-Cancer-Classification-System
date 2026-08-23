@@ -112,6 +112,25 @@ After a prediction is produced, Grad-CAM is used to generate a heatmap showing i
 
 ---
 
+# Training Environment & Compute
+
+The models were trained using **Kaggle Notebooks** with an NVIDIA **Tesla T4 GPU**.
+
+### Training Configuration
+
+| Component        | Configuration    |
+| ---------------- | ---------------- |
+| Platform         | Kaggle Notebooks |
+| GPU              | NVIDIA Tesla T4  |
+| Framework        | PyTorch          |
+| Batch Size       | **64**           |
+| Input Resolution | **224 × 224**    |
+
+A batch size of **64** was used during training. Increasing the batch size further resulted in **out-of-memory (OOM)** errors on the available GPU memory, so 64 was used as the practical batch-size limit for the training setup.
+
+The models were trained using the same general training pipeline, with the final classification layer adapted to the number of classes for each task.
+
+
 # Router Model
 
 ## Purpose
