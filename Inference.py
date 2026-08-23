@@ -2,7 +2,6 @@ import torch
 import torch.nn as nn
 from torchvision import models, transforms
 from PIL import Image
-from models_paths import brain_path, kidney_path, oral_path, router_path
 from grad_cam import grad_cam, overlay_heatmap
 from input_validation import validate
 
@@ -13,7 +12,6 @@ transform = transforms.Compose([
     transforms.ToTensor(),
     transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
 ])
-
 
 router_classes = ["brain", "kidney", "oral", "random"]
 brain_classes = ["glioma", "meningioma", "notumor", "pituitary"]
@@ -29,7 +27,7 @@ def load_model(path, num_classes):
     model.eval()
     return model
 
-
+#place the models path respectively
 router_model = load_model(router_path, len(router_classes))
 brain_model = load_model(brain_path, len(brain_classes))
 oral_model = load_model(oral_path, len(oral_classes))
@@ -68,7 +66,7 @@ def predict(image_path):
         top_confidence=expert_probs[top_idx].item()
  
         if top_confidence<0.5:
-            print(f"Model has low confidence ({top_confidence:.2%}): result unreliable")
+            print(f"Model has low confidence ({top_confidence:.2%})-recommended manuall review")
             exit(0)
 
         final_class=expert_classes[torch.argmax(expert_probs).item()]
@@ -91,7 +89,7 @@ def predict(image_path):
 
 
 if __name__ == "__main__":
-    image_path=r"C:\Users\Devi Prasad\OneDrive\Documents\prep\Machine learning\CNN\project\adorable-puppy-sitting-on-green-grass-photo.jpg"
+    image_path="" #path of the image
 
     if(validate(image_path)):
         predict(image_path)
