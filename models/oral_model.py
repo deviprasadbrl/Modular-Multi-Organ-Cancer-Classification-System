@@ -22,9 +22,11 @@ test_transform = transforms.Compose([
     transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
 ])
 
-train_dir="/kaggle/input/datasets/ashenafifasilkebede/dataset/train"
-test_dir="/kaggle/input/datasets/ashenafifasilkebede/dataset/test"
-val_dir="/kaggle/input/datasets/ashenafifasilkebede/dataset/val"
+#place the train,text and val root from the dataset
+
+train_dir=""
+test_dir=""
+val_dir=""
 
 
 train_dataset=datasets.ImageFolder(root=train_dir, transform=train_transform)
@@ -50,6 +52,8 @@ model=model.to(device)
 optimizer_1=optim.Adam(params=model.classifier.parameters(), lr=1e-3)
 criterion=nn.CrossEntropyLoss() 
 
+#feature transfer
+
 print("Running Stage 1")
 for epoch in range(3):
     for batch_x, batch_y in train_loader:
@@ -74,6 +78,8 @@ optimizer_2 = optim.Adam([
 best_val=float("inf")
 patience=2
 patience_counter=0
+
+#full fine tuning
 
 print("\nRunning Stage 2")
 for epoch in range(15):
