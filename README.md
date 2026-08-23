@@ -48,8 +48,7 @@ The current inference pipeline accepts:
 
 * `.png`
 * `.jpg`
-* `.jpeg`
-
+  
 Invalid files are rejected before they reach the model.
 
 ### 2. Preprocessing
@@ -100,7 +99,7 @@ After the expert prediction, the highest softmax probability is used as the conf
 If the confidence is below `0.50`, the system reports:
 
 ```text
-Model has low confidence (...): result unreliable
+Model has low confidence-recommended manuall review.
 ```
 
 and does not return a final classification.
@@ -162,7 +161,7 @@ The router achieved **100% accuracy and 100% macro F1** on this evaluation set.
 
 ### Router Confusion Matrix
 
-**[ADD IMAGE HERE — `assets/router_confusion_matrix.png`]**
+<img width="2400" height="1800" alt="router_confusion_matrix" src="https://github.com/user-attachments/assets/f38c9778-b885-45bd-9a31-f3c6b14d8aaf" />
 
 The confusion matrix shows the predictions across the four routing categories.
 
@@ -211,7 +210,8 @@ The Brain Expert achieved:
 
 ### Confusion Matrix
 
-**[ADD IMAGE HERE — `assets/brain_confusion_matrix.png`]**
+<img width="2400" height="1800" alt="brain_confusion_matrix" src="https://github.com/user-attachments/assets/d9d80cf5-e997-4597-9282-d69c5110c33d" />
+
 
 
 ### Grad-CAM Examples
@@ -266,7 +266,7 @@ The Kidney Expert achieved:
 
 ### Confusion Matrix
 
-**[ADD IMAGE HERE — `assets/kidney_confusion_matrix.png`]**
+<img width="2400" height="1800" alt="kidney_confusion_matrix" src="https://github.com/user-attachments/assets/3f073506-5548-44ea-992a-a305937d3935" />
 
 
 ### Grad-CAM Examples
@@ -314,7 +314,8 @@ The Oral Expert achieved:
 
 ### Confusion Matrix
 
-**[ADD IMAGE HERE — `assets/oral_confusion_matrix.png`]**
+<img width="2400" height="1800" alt="oral_confusion_matrix" src="https://github.com/user-attachments/assets/501d36db-6eef-4b45-9b44-8b604918d32b" />
+
 
 The oral expert has lower performance than the brain and kidney experts. In particular, the Normal class has a lower F1-score than OSCC.
 
@@ -446,7 +447,7 @@ Final Output
 
 ---
 
-# 🔥 Explainability with Grad-CAM
+# Explainability with Grad-CAM
 
 Grad-CAM is used to visualize regions associated with the model's activation for the selected prediction.
 
@@ -496,7 +497,7 @@ Original | Heatmap | Overlay
 
 ---
 
-# 🌐 External Image Testing & Generalization
+# External Image Testing & Generalization
 
 During qualitative testing, an important behavior was observed.
 
@@ -631,7 +632,7 @@ weights/
 
 ---
 
-# ▶️ Running Inference
+# Running Inference
 
 After placing the trained weights in the expected location, update the paths in the model-path configuration.
 
@@ -673,7 +674,7 @@ Potential future improvements include:
 
 ---
 
-# 🧪 What I Learned
+# What I Learned
 
 This project provided practical experience with:
 
@@ -716,15 +717,15 @@ The project is intended as an **educational and research prototype**, with futur
 
 ---
 
-## 👤 Author
+## Author
 
-**Devi Prasad**
+**Devi Prasad BRL**
 
 [GitHub](https://github.com/deviprasadbrl)
 
 ---
 
-### 📌 Visual Assets to Add
+### Visual Assets to Add
 
 Before publishing, replace these placeholders with the actual files:
 
