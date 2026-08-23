@@ -216,7 +216,7 @@ The Brain Expert achieved:
 
 <p align="center">
   <img src="assets/brain_confusion_matrix.png" width="500">
-</p><img width="2400" height="1800" alt="brain_confusion_matrix" src="https://github.com/user-attachments/assets/d9d80cf5-e997-4597-9282-d69c5110c33d" />
+</p>
 
 
 
