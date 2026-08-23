@@ -112,6 +112,21 @@ After a prediction is produced, Grad-CAM is used to generate a heatmap showing i
 
 ---
 
+# Transfer Learning & Fine-Tuning
+
+All models in the system use **DenseNet121** with a transfer-learning and fine-tuning approach.
+
+Pretrained DenseNet121 weights were used as the starting point, after which the final classification layer was adapted to the number of classes required for each task.
+
+The models were then fine-tuned on their respective medical datasets:
+
+- Router → 4 classes
+- Brain Expert → 4 classes
+- Kidney Expert → 4 classes
+- Oral Expert → 2 classes
+
+This approach allowed the pretrained visual representations to be adapted to the specific characteristics of each medical imaging domain.
+
 # Training Environment & Compute
 
 The models were trained using **Kaggle Notebooks** with an NVIDIA **Tesla T4 GPU**.
