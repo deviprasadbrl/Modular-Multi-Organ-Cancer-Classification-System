@@ -143,6 +143,37 @@ Input Image
      └── random ──→ Reject / Unsupported Domain
 ```
 
+### Router Dataset Construction
+
+The router dataset was constructed by organizing images into domain-level categories rather than disease-level categories:
+
+| Router Class | Source Domain                                |
+| ------------ | -------------------------------------------- |
+| `brain`      | Brain MRI                                    |
+| `kidney`     | Kidney CT                                    |
+| `oral`       | Oral histopathology                          |
+| `random`     | Images outside the supported medical domains |
+
+The resulting dataset allows the router to learn the distinction between the three supported medical domains and an additional out-of-domain category.
+
+The router therefore performs **domain classification**, while the expert models perform the actual disease/class classification.
+
+```text
+Brain MRI          ──┐
+                     │
+Kidney CT           ──┼──→ Router Dataset
+                     │
+Oral Histopathology ─┤
+                     │
+Out-of-domain       ─┘
+                            ↓
+                    Router Training
+                            ↓
+                  brain / kidney / oral / random
+```
+
+> **Dataset note:** The `random` class is intended to represent images outside the supported domains. Its performance should therefore be interpreted in the context of the images selected for this category.
+
 If the router predicts `random`, the inference script informs the user that the current system only processes brain, kidney, and oral images.
 
 If the router confidence is too low, the system reports the prediction as unreliable rather than continuing blindly.
