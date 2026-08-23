@@ -718,6 +718,16 @@ The pipeline will:
 
 ---
 
+# AI Assistance
+
+AI tools were used during the development of this project as a supporting resource for:
+
+* Documentation and README organization
+* Debugging and clarification of implementation issues
+* Brainstorming and improving project presentation
+
+The model architecture, training, evaluation, inference pipeline, and experimentation were implemented and tested by the author.
+
 # Future Improvements
 
 Potential future improvements include:
