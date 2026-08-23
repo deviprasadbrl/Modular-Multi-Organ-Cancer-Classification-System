@@ -34,7 +34,9 @@ The system contains:
 
 ### High-Level Pipeline
 
-<img width="2720" height="2120" alt="image" src="https://github.com/user-attachments/assets/e5ca39ec-e7db-4930-9519-965a27d8d68c" />
+<p align="center">
+  <img src="assets/cancer_detection_pipeline_flow.png" width="500">
+</p>
 
 
 
