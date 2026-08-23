@@ -396,19 +396,19 @@ The oral expert has lower performance than the brain and kidney experts. In part
 
 ### Grad-CAM Examples
 
-<table>
-  <tr>
-    <th>Original Image</th>
-    <th>Grad-CAM Overlay</th>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="assets/gradcam/oral_OSCC_image.jpg" width="350">
-    </td>
-    <td align="center">
-      <img src="assets/gradcam/oral_OSCC_gradcam.jpg" width="350">
-    </td>
-  </tr>
+<table> 
+  <tr> 
+    <th>Original Image</th> 
+    <th>Grad-CAM Overlay</th> 
+  </tr> 
+  <tr> 
+    <td align="center"> 
+      <img src="assets/gradcam/oral_OSCC_image.jpg" width="350" alt="Original Oral OSCC Image" /> 
+    </td> 
+    <td align="center"> 
+      <img src="assets/gradcam/oral_OSCC_gradcam.jpg" width="350" alt="Grad-CAM Overlay" /> 
+    </td> 
+  </tr> 
 </table>
 
 # Results Summary
@@ -522,6 +522,7 @@ Grad-CAM
     ↓
 Final Output
 ```
+### Inference Output
 
 ```text
 
