@@ -611,6 +611,11 @@ Grad-CAM provides an interpretation-oriented visualization but does not guarante
 
 ```text
 modular-multi-organ-cancer/
+├── models_weights/
+│   ├── brain_expert_model.pth
+│   ├── kidney_expert_model.pth
+│   ├── oral_expert_model.pth
+│   └── router_expert_model.pth
 │
 ├── models/
 │   ├── brain_model.py
@@ -655,23 +660,17 @@ pip install -r requirements.txt
 
 # Model Weights
 
-The trained model weights are approximately hundreds of megabytes per model and should not be committed directly to the normal Git history.
+The trained model checkpoints are included with the project.
 
-The repository should contain the model code and instructions for obtaining the trained weights.
-
-**[ADD YOUR WEIGHT-HOSTING LINK HERE]**
-
-Expected structure:
-
-```text
 weights/
-├── router.pth
-├── brain.pth
-├── kidney.pth
-└── oral.pth
-```
+├── brain_expert_model.pth
+├── kidney_expert_model.pth
+├── oral_expert_model.pth
+└── router_expert_model.pth
 
----
+Each model checkpoint is approximately 27 MB.
+
+The inference script loads the corresponding checkpoint from the paths defined in models_paths.py.
 
 # Running Inference
 
