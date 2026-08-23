@@ -269,17 +269,22 @@ The Brain Expert achieved:
 </p>
 
 
-
 ### Grad-CAM Examples
 
-**[ADD 2–3 IMAGE PANELS HERE]**
-
-Recommended layout:
-
-```text
-Original Image   →   Grad-CAM Heatmap   →   Overlay
-```
----
+<table>
+  <tr>
+    <th>Original Image</th>
+    <th>Grad-CAM Overlay</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="assets/gradcam/glioma_brain_image.jpg" width="350">
+    </td>
+    <td align="center">
+      <img src="assets/gradcam/glioma_brain_gradcam.jpg" width="350">
+    </td>
+  </tr>
+</table>
 
 # Kidney Expert
 
@@ -329,9 +334,20 @@ The Kidney Expert achieved:
 
 ### Grad-CAM Examples
 
-**[ADD 2–3 IMAGE PANELS HERE]**
-
----
+<table>
+  <tr>
+    <th>Original Image</th>
+    <th>Grad-CAM Overlay</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="assets/gradcam/kidney_tumor_image.jpg" width="350">
+    </td>
+    <td align="center">
+      <img src="assets/gradcam/kidney_tumor_gradcam.jpg" width="350">
+    </td>
+  </tr>
+</table>
 
 # Oral Expert
 
@@ -380,15 +396,20 @@ The oral expert has lower performance than the brain and kidney experts. In part
 
 ### Grad-CAM Examples
 
-**[ADD 2–3 IMAGE PANELS HERE]**
-
-Show:
-
-```text
-Original → Grad-CAM → Overlay
-```
-
----
+<table>
+  <tr>
+    <th>Original Image</th>
+    <th>Grad-CAM Overlay</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="assets/gradcam/oral_OSCC_image.jpg" width="350">
+    </td>
+    <td align="center">
+      <img src="assets/gradcam/oral_OSCC_gradcam.jpg" width="350">
+    </td>
+  </tr>
+</table>
 
 # Results Summary
 
@@ -526,34 +547,7 @@ Overlay on Original Image
 
 The goal is to provide an additional visual interpretation of the model's prediction rather than returning only a class label.
 
-## Example Visualizations
-
-### Brain
-
-**[ADD IMAGE PANEL HERE]**
-
-```text
-Original | Heatmap | Overlay
-```
-
-### Kidney
-
-**[ADD IMAGE PANEL HERE]**
-
-```text
-Original | Heatmap | Overlay
-```
-
-### Oral
-
-**[ADD IMAGE PANEL HERE]**
-
-```text
-Original | Heatmap | Overlay
-```
-
 > **Important:** Grad-CAM is an interpretability visualization. It does not prove that the highlighted region is medically causal or that the prediction is clinically correct.
-
 ---
 
 # External Image Testing & Generalization
