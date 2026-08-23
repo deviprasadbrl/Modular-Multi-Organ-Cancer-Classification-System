@@ -40,7 +40,14 @@ def predict(image_path):
 
     with torch.no_grad():
         router_out = router_model(x)
-        router_class = router_classes[torch.argmax(router_out, dim=1).item()]
+        router_probs = torch.softmax(router_out, dim=1)[0]
+        router_idx = torch.argmax(router_probs).item()
+        router_class = router_classes[router_idx]
+        router_confidence = router_probs[router_idx].item()
+
+        if router_confidence < 0.5:
+            print(f"Router has low confidence ({router_confidence:.2%}) - recommended manual review")
+            exit(0)
 
         # step 2: send to the matching expert
         if router_class == "brain":
@@ -66,7 +73,7 @@ def predict(image_path):
         top_confidence=expert_probs[top_idx].item()
  
         if top_confidence<0.5:
-            print(f"Model has low confidence ({top_confidence:.2%})-recommended manuall review")
+            print(f"Model has low confidence ({top_confidence:.2%}) - recommended manual review")
             exit(0)
 
         final_class=expert_classes[torch.argmax(expert_probs).item()]
