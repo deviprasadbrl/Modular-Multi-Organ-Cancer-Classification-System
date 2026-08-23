@@ -35,7 +35,7 @@ The system contains:
 ### High-Level Pipeline
 
 <p align="center">
-  <img src="assets/cancer_detection_pipeline_flow.png" width="500">
+  <img src="assets/architure.png" width="500">
 </p>
 
 
@@ -523,7 +523,9 @@ Grad-CAM
 Final Output
 ```
 
-**[ADD IMAGE HERE — screenshot of your terminal inference output]**
+<p align="center">
+  <img src="assets/inference_out.png" width="200">
+</p>
 
 ---
 
@@ -620,8 +622,6 @@ Grad-CAM provides an interpretation-oriented visualization but does not guarante
 
 # Project Structure
 
-**[CHANGE THIS SECTION TO MATCH YOUR FINAL GITHUB FOLDER STRUCTURE]**
-
 ```text
 modular-multi-organ-cancer/
 ├── models_weights/
@@ -637,8 +637,8 @@ modular-multi-organ-cancer/
 │   └── router_model.py
 │
 ├── assets/
-|   ├── models/
-│   ├── architecture.png
+|   ├── infernce_out.png
+│   ├── architure.png
 │   ├── router_confusion_matrix.png
 │   ├── brain_confusion_matrix.png
 │   ├── kidney_confusion_matrix.png
@@ -669,8 +669,8 @@ modular-multi-organ-cancer/
 ## Clone the repository
 
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
-cd <YOUR_REPOSITORY_NAME>
+git clone <https://github.com/deviprasadbrl/Modular-Multi-Organ-Cancer-Classification-System>
+cd <Modular-Multi-Organ-Cancer-Classification-System>
 ```
 
 ## Install dependencies
@@ -796,22 +796,3 @@ The project is intended as an **educational and research prototype**, with futur
 [GitHub](https://github.com/deviprasadbrl)
 
 ---
-
-### Visual Assets to Add
-
-Before publishing, replace these placeholders with the actual files:
-
-```text
-[1] assets/architecture.png
-[2] assets/router_confusion_matrix.png
-[3] assets/brain_confusion_matrix.png
-[4] assets/kidney_confusion_matrix.png
-[5] assets/oral_confusion_matrix.png
-[6] Brain Grad-CAM examples
-[7] Kidney Grad-CAM examples
-[8] Oral Grad-CAM examples
-[9] Inference terminal screenshot
-[10] Final project/demo screenshot (optional)
-```
-
-The **most important visual assets** are the architecture diagram, four confusion matrices, and the Grad-CAM examples. They should be placed near the sections where they are discussed rather than collected at the very bottom.
